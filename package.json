@@ -1,0 +1,36 @@
+{
+  "name": "technicolor-logger",
+  "version": "1.0.0",
+  "description": "A pretty log tool for Node.js applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/james-gibson/technicolor-logger.git"
+  },
+  "keywords": [
+    "Log",
+    "Console.Log"
+  ],
+  "contributors": [
+    {
+      "name": "James Gibson",
+      "email": "iam@jamesgibson.co"
+    },
+    {
+      "name": "Teagan Glenn",
+      "email": "that@teagantotally.rocks"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/james-gibson/technicolor-logger/issues"
+  },
+  "homepage": "https://github.com/james-gibson/technicolor-logger#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "curry": "^1.2.0"
+  }
+}
