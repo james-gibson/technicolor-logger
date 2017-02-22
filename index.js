@@ -23,11 +23,17 @@ function loadLogger(loggerConfig) {
 }
 
 function loadLoggers(loggers) {
-    if (loggers && loggers instanceof Array) {
-        loggers.forEach(function(loggerConfig) {
-            loadLogger(loggerConfig);
-        });
+    const loggersToLoad = loggers || [];
+
+    if (!loggers || !(loggers instanceof Array)) {
+        // Only passed in one
+        loggersToLoad.push(loggers);
     }
+
+
+    loggers.forEach(function(loggerConfig) {
+        loadLogger(loggerConfig);
+    });
 }
 
 function init(cfg) {
